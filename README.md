@@ -14,6 +14,8 @@ A very simple IPFS node - meant for running an IPFS node on a server and encapsu
 
 `docker volume create ipfs-vol`
 
+`chown -R 1000:1000 /var/lib/docker/volumes/ipfs-vol`
+
 `docker run -it --mount source=ipfs-vol,target=/root/.ipfs/ ipfs-simple ipfs init --profile server`
 
 ## run
